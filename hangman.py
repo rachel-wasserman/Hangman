@@ -25,6 +25,7 @@ def printHangman(hangman):
 chosenWord = pickRandom()
 #print(chosenWord)
 print(">>> Welcome to Hangman!")
+print("Enter an uppercase letter")
 
 hangman = []
 for i in range(len(chosenWord)):
@@ -43,6 +44,9 @@ while incorrect < 6 and win == False:
     
     if guess in guessed:
         print("You already guessed that letter.")
+    
+    elif len(guess) > 1 or guess == guess.lower():
+        print("Not a valid letter.")
     
     else:
         guessed.append(guess)
