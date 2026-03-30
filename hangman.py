@@ -25,7 +25,7 @@ def printHangman(hangman):
 chosenWord = pickRandom()
 #print(chosenWord)
 print(">>> Welcome to Hangman!")
-print("Enter an uppercase letter")
+print("Enter an uppercase letter.")
 
 hangman = []
 for i in range(len(chosenWord)):
